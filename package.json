@@ -1,0 +1,36 @@
+{
+  "name": "selo_studios_foundation",
+  "version": "1.0.0",
+  "description": "A base project for creating React / Redux Applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owzzz/Selo_Studios_Foundation.git"
+  },
+  "author": "Owain Llewellyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owzzz/Selo_Studios_Foundation/issues"
+  },
+  "homepage": "https://github.com/owzzz/Selo_Studios_Foundation#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "normalize.css": "^7.0.0",
+    "path": "^0.12.7",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "styled-components": "^2.2.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  }
+}
