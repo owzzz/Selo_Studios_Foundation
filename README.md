@@ -4,12 +4,12 @@ This project is a base for creating React / Redux Web Applications across client
 
 * Automate testing of Javascript ([Ava](https://github.com/avajs/ava))
 * Lint Javascript ([ESLin](https://eslint.org/))
-* Transpile ES6/ES2015 (Babel)
-* Hot reloading (Babel)
-* Consistent text editor standards (EditorConfig)
-* Minification of files (Webpack)
-* Optimisation of images/SVG (Webpack)
-* Development server (Express)
+* Transpile ES6/ES2015 ([Babel](https://babeljs.io))
+* Hot reloading ([Babel](https://babeljs.io))
+* Consistent text editor standards ([EditorConfig](http://editorconfig.org/))
+* Minification of files ([Webpack](https://webpack.github.io/))
+* Optimisation of images/SVG ([Webpack](https://webpack.github.io/))
+* Development server ([Express](https://expressjs.com/))
 
 ## Libraries and Frameworks
 * Babel
