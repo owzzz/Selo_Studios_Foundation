@@ -1,6 +1,10 @@
 import { injectGlobal } from 'styled-components';
 import normalize from 'normalize.css';
 
-injectGlobal(normalize)`
-
+const Global = injectGlobal`
+  html {
+    box-sizing: border-box;
+  }
 `;
+
+export default Global;
