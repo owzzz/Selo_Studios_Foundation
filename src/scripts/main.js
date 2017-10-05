@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Core Styles
-import '../styles/core/reset';
+// import '../styles/core/reset';
 
 export default class main {
   constructor() {
