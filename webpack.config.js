@@ -7,8 +7,8 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body'
 });
 
-module.exports = {
-    entry: "./src/scripts/main.js",
+module.exports = (options) => {
+    entry: options.entry,
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: "main.min.js"
@@ -33,6 +33,23 @@ module.exports = {
           }
         },
         {
+          test: /\.(png|jpg|gif|webp)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {}
+            }
+          ]
+        },
+        {
+          test: /\.html$/,
+          use: [
+            {
+              loader: 'html-loader'
+            }
+          ]
+        },
+        {
           test: /\.css$/,
           loader: "style!css"
         },
@@ -43,7 +60,15 @@ module.exports = {
         }
       ]
     },
-    plugins: [HtmlWebpackPluginConfig],
+    plugins: options.plugins.concat(
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+        filename: './dist/index.html',
+        inject: 'body'
+      }),
+      new webpack.DefinePlugin({
+        ENV: JSON.stringify(isProduction)
+      })),
 
     resolve: {
       extensions: [' ', 'js']

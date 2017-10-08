@@ -6,9 +6,9 @@
   "scripts": {
     "test": "test.js",
     "start": "webpack-dev-server --inline",
-    "build:dev": "webpack",
-    "build:qa": "webpack -p",
-    "build:prod": "webpack --config webpack.config.production.js -p"
+    "build:dev": "NODE_ENV=development webpack",
+    "build:qa": "NODE_ENV=qa webpack -p",
+    "build:prod": "NODE_ENV=production webpack --config webpack.config.production.js -p"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,8 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
-    "eslint-loader": "^1.9.0"
+    "eslint-loader": "^1.9.0",
+    "file-loader": "^1.1.5",
+    "html-loader": "^0.5.1"
   }
 }
