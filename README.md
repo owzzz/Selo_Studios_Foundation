@@ -4,6 +4,8 @@ This project is a base for creating React / Redux Web Applications across client
 
 * Automate testing of Javascript ([Ava](https://github.com/avajs/ava))
 * Lint Javascript ([ESLin](https://eslint.org/))
+* Lint Stylesheets ([Stylelint](https://github.com/styled-components/stylelint-processor-styled-components))
+* Encapsulated component styling ([Styled-components](https://www.styled-components.com/))
 * Transpile ES6/ES2015 ([Babel](https://babeljs.io))
 * Hot reloading ([Babel](https://babeljs.io))
 * Consistent text editor standards ([EditorConfig](http://editorconfig.org/))
@@ -14,6 +16,7 @@ This project is a base for creating React / Redux Web Applications across client
 ## Libraries and Frameworks
 * Babel
 * Webpack
+
 
 
 ## Installation Instructions
