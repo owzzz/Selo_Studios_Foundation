@@ -14,3 +14,14 @@ This project is a base for creating React / Redux Web Applications across client
 ## Libraries and Frameworks
 * Babel
 * Webpack
+
+
+## Installation Instructions
+
+### Global Dependencies
+
+#### Stylelint
+
+```
+npm install -g stylelint
+```

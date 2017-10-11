@@ -7,9 +7,9 @@
     "precommit": "lint-staged",
     "test": "test.js",
     "start": "webpack-dev-server --inline",
-    "build:dev": "NODE_ENV=development webpack",
-    "build:qa": "NODE_ENV=qa webpack -p",
-    "build:prod": "NODE_ENV=production webpack --config webpack.config.production.js -p"
+    "build:dev": "cross-env NODE_ENV=development webpack",
+    "build:qa": "cross-env NODE_ENV=qa webpack -p",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.production.js -p"
   },
   "lint-staged": {
     "*.js": ["eslint --fix", "git add"]
