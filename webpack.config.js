@@ -7,7 +7,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body'
 });
 
-module.exports = (options) => {
+module.exports = (options) => ({
     entry: options.entry,
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -81,4 +81,4 @@ module.exports = (options) => {
     resolve: {
       extensions: [' ', 'js']
     }
-};
+});

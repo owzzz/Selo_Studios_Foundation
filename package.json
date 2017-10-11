@@ -4,12 +4,16 @@
   "description": "A base project for creating React / Redux Applications",
   "main": "index.js",
   "scripts": {
+    "precommit": "lint-staged",
     "test": "test.js",
     "start": "webpack-dev-server --inline",
     "build:dev": "NODE_ENV=development webpack",
     "build:qa": "NODE_ENV=qa webpack -p",
     "build:prod": "NODE_ENV=production webpack --config webpack.config.production.js -p"
   },
+  "lint-staged": {
++   "*.js": ["eslint --fix", "git add"]
++ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/owzzz/Selo_Studios_Foundation.git"
