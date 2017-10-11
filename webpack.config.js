@@ -36,10 +36,18 @@ module.exports = (options) => {
           test: /\.(png|jpg|gif|webp)$/,
           use: [
             {
-              loader: 'file-loader',
-              options: {}
+              loader: 'url-loader',
+              options: {
+                limit: 8192
+              }
             }
           ]
+        },
+        {
+          test: /\.svg/,
+          use: {
+            loader: 'svg-url-loader'
+          }
         },
         {
           test: /\.html$/,
@@ -68,8 +76,8 @@ module.exports = (options) => {
       }),
       new webpack.DefinePlugin({
         ENV: JSON.stringify(isProduction)
-      })),
-
+      })
+    ),
     resolve: {
       extensions: [' ', 'js']
     }
